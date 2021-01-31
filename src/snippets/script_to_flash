@@ -1,0 +1,13 @@
+import os
+
+file_name = "{{FILE_NAME}}"
+script_content = """
+{{SCRIPT_CONTENT}}
+"""
+rename_to_main = {{RENAME_TO_MAIN}}
+
+with open(file_name, 'w') as f:
+    f.write(script_content)
+
+if rename_to_main is True:
+    os.rename(file_name, 'main.py')

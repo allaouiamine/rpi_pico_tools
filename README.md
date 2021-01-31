@@ -1,0 +1,1 @@
+simple tool that interact with Raspberry Pi Pico using serial console.
